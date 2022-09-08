@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Records!</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <script>
+        var latestRecordIndex = 0;
+
+        function updateTable(){
+            var tbl = document.getElementById("table");
+            var row = tbl.insertRow();
+            var rno = row.insertCell();
+            var name = row.insertCell();
+            rno.innerHTML = document.getElementById("RNo").value;
+            name.innerHTML = document.getElementById("SName").value;
+            latestRecordIndex = latestRecordIndex + 1;
+            document.getElementById('RNo').value = '';
+            document.getElementById('SName').value = '';
+        }
+
+        function myDeleteFunction() {
+            if (latestRecordIndex > 0){
+                document.getElementById("table").deleteRow(latestRecordIndex);
+                latestRecordIndex = latestRecordIndex - 1;
+            }
+        }
+    </script>
+  </head>
+  <body>
+    <div class="records">
+     <center> <h1> Student Records </h1> </center> 
+     <form id="record" method="post" onSubmit="updateTable(); return false;"> 
+        <input type="rtext" name="RNo" id="RNo" placeholder="Roll no." required/> 
+        <input type="rtext" name="SName" id="SName" placeholder="Name" required/>
+        <button class="b2" type="submit">Add Row</button>
+    </form>
+    <br></br>
+    <table class="table" id="table">
+        <tr>
+          <th>Roll No.</th>
+          <th>Name</th>
+        </tr>
+    </table>
+    <br></br>
+    <button class="b3" type="submit" onClick="myDeleteFunction()">Delete Last Entry</button>
+    </div>
+  </body>
+</html>

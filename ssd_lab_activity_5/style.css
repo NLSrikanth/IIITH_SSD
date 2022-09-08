@@ -1,0 +1,99 @@
+body  
+{  
+    margin: 0;  
+    padding: 0;  
+    background-color:#6abadeba;  
+    font-family: 'Arial';  
+}  
+.login{  
+        width: 382px;  
+        overflow: hidden;  
+        margin: auto;  
+        padding: 80px;
+        background: #23463f;  
+        border-radius: 15px ;  
+        box-shadow: 5px 10px #888888;
+        place-items: center;
+}
+
+label{  
+    color: #08ffd1;  
+    font-size: 17px;  
+}
+
+input[type=text], input[type=password] {   
+    width: 100%;   
+    margin: 8px 0;  
+    padding: 12px 20px;   
+    display: inline-block;   
+    border: 2px solid green;   
+    box-sizing: border-box;     
+    font-family: Arial;
+}
+
+input[type=text], input[type=password]:hover {
+    border-color: purple;
+ }
+
+input[type=rtext]{   
+    margin: 8px 0;  
+    padding: 12px 20px;   
+    display: inline-block;   
+    border: 2px solid green;   
+    box-sizing: border-box;  
+    font-family: Arial; 
+}
+
+.b1 {   
+    width: 50%;   
+    margin: 8px 0;  
+    padding: 12px 20px;   
+    display: inline-block;   
+    border: 2px solid green;   
+    box-sizing: border-box;   
+    text-align: center;
+}
+
+.b2 {   
+    margin: 8px 0;  
+    padding: 12px 20px;   
+    display: inline-block;   
+    border: 2px solid green;   
+    box-sizing: border-box;   
+    background-color: green;  
+}
+
+.b3 {   
+    margin: 8px 0;  
+    padding: 12px 20px;   
+    display: inline-block;   
+    border: 2px solid green;   
+    box-sizing: border-box;   
+    background-color: red;  
+}
+
+.records {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    width: 50%;
+    text-align: center;
+    padding: 12px 20px;   
+    border: 2px solid green;   
+}
+
+th {
+    background-color: blueviolet;
+}
+
+tr:nth-child(even) {
+    background-color: Lightgreen;
+}
+h2 {
+    align-items: center; 
+    text-align: center;
+}
