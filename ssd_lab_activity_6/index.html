@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="myscript.js"></script>
+  </head>
+
+  <body>      
+    <div class="login">    
+      <h2>Team Form</h2><br>
+        <form id="form" method="post">    
+            <label><b>Manager Name</b></label>    
+            <input type="text" name="Mname" id="Mname" required>    
+            <br><br>    
+            <label><b>Group Email</b></label>    
+            <input type="email" name="Email" id="Email" required>    
+            <br><br>    
+            <label><b>Server Username</b></label>    
+            <input type="text" name="SName" id="SName" onblur="validateUserName(this.value)" required>  
+            <span class="error" id="unameerror"></span>
+            <br><br>    
+            <label><b>Server Password</b></label>    
+            <input type="Password" name="SPass" id="SPass" placeholder="Server Password" required> 
+            <br><br>  
+            <label><b>Confirm Password</b></label>    
+            <input type="Password" name="CPass" id="CPass" onblur="validatePassword()" placeholder="Confirm Password" required> 
+            <span class="error" id="cpasserror"></span>
+            <br><br>   
+            <label><b>Team Lead</b></label>    
+            <select name="TLName" id="TLName" required>
+              <option value="TL1">Team Lead1</option>
+              <option value="TL2">Team Lead2</option>
+              <option value="TL3">Team Lead3</option>
+              <option value="TL4">Team Lead4</option>
+            </select>
+            <br><br> 
+            <div class='parent'>
+              <label><b>Team Members</b></label> 
+              <div class='child' ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="tm1"><p draggable="true" ondragstart="drag(event)" id="tm1">Team Member1</p></div>
+                <div class="tm1"><p draggable="true" ondragstart="drag(event)" id="tm2">Team Member2</p></div>
+                <div class="tm1"><p draggable="true" ondragstart="drag(event)" id="tm3">Team Member3</p></div>
+              </div>
+              
+              <div class='child' ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="tm2"><p draggable="true" ondragstart="drag(event)" id="tm4">Team Member4</p></div>
+                <div class="tm2"><p draggable="true" ondragstart="drag(event)" id="tm5">Team Member5</p></div>
+                <div class="tm2"><p draggable="true" ondragstart="drag(event)" id="tm6">Team Member6</p></div>
+              </div>
+            </div>
+            <br><br>
+
+            <button class="b1" type="submit" onClick="onSubmit()">Submit</button>
+        </form>
+    </div>    
+  </body>
+</html>

@@ -1,0 +1,88 @@
+body  
+{  
+    margin: 0;  
+    padding: 0;   
+    font-family: 'Arial';  
+}  
+.login{  
+        width: 650px;  
+        overflow: hidden;  
+        margin: auto;  
+        padding: 80px;
+        border-radius: 15px ;  
+        place-items: center;
+}
+
+label{   
+    font-size: 17px;  
+}
+
+input[type=text], input[type=password], input[type=Email] {  
+    margin: 8px 0;  
+    padding: 5px 10px;   
+    display: inline-block;     
+    box-sizing: border-box;     
+    font-family: Arial;
+}
+
+select{   
+    margin: 8px 0;  
+    padding: 5px 10px;   
+    display: inline-block;     
+    box-sizing: border-box;     
+    font-family: Arial;
+}
+
+.b1 {   
+    width: 25%;   
+    margin: 8px 0;  
+    padding: 12px 20px;   
+    display: inline-block;   
+    border: 2px solid green;   
+    box-sizing: border-box;   
+    text-align: center;
+}
+
+h2 {
+    align-items: center; 
+    text-align: center;
+}
+
+.div1 {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+  }
+
+.div2 {
+    float: right;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.child {
+    display: inline-block;
+    border: 1px solid;
+    padding: 1rem 1rem;
+    height: 200px;
+    width: 150px;
+    vertical-align: middle;
+}
+
+.tm1{
+    background-color: blue;
+}
+.tm2{
+    background-color: grey;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
