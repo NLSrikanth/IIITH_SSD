@@ -1,0 +1,8 @@
+CREATE OR REPLACE PROCEDURE getCustByCity(city IN varchar DEFAULT 'Bangalore')
+IS
+ cust SYS_REFCURSOR;
+BEGIN
+ Open cust for
+ SELECT CUST_NAME FROM customer WHERE WORKING_AREA = city;
+ DBMS_SQL.RETURN_RESULT(cust);
+END;
